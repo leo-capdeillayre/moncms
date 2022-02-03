@@ -1,0 +1,12 @@
+2022-02-02T14:30:38+00:00 CRITICAL Uncaught Error: Undefined constant "WP_ENVIRONMENT_TYPE" in /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php:90
+Stack trace:
+#0 /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php(90): constant()
+#1 /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php(58): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->make_request()
+#2 /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(113): Automattic\WooCommerce\Admin\Schedulers\MailchimpScheduler->run()
+#3 /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-includes/class-wp-hook.php(307): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#4 /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters()
+#5 /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-includes/plugin.php(522): WP_Hook->do_action()
+#6 /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-cron.php(138): do_action_ref_array()
+#7 {main}
+  thrown dans /var/www/vhosts/leo-capdeillayre.students-laplateforme.io/httpdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Schedulers/MailchimpScheduler.php à la ligne 90
+
